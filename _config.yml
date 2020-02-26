@@ -39,17 +39,17 @@ footer-links:
   behance: # https://www.behance.net/<username>
   dribbble:
   email: ohmvikrant2000@gmail.com
-  facebook: https://www.facebook.com/vikrant.dey.96
+  facebook: vikrant.dey.96
   flickr:
   github: OhmVikrant
   googleplus: # anything in your profile username that comes after plus.google.com/
-  instagram: https://www.instagram.com/vikrantdey/
-  linkedin: https://www.linkedin.com/in/vikrant-dey-6a6b811a2/
+  instagram: vikrantdey
+  linkedin: vikrant-dey-6a6b811a2
   pinterest:
   rss: # just type anything here for a working RSS icon
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   tumblr: # https://<username>.tumblr.com
-  twitter: https://twitter.com/DeyVikrant
+  twitter: DeyVikrant
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # Text under the icons in footer
