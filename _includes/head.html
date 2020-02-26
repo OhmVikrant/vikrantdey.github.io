@@ -1,6 +1,17 @@
 <head>
   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans|Roboto+Slab:300|Roboto:500" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  
+  <script>
+    var typed = new Typed('.site-name', {
+    stringsElement: '.site-name',
+    loop: true,
+    backSpeed: 40,
+    showCursor: true,
+    fadeOut: true
+    }); 
+  </script>
   {% include meta.html %}
   {% include fonts.html %}
 
