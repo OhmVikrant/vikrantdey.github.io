@@ -29,7 +29,7 @@ navigation:
   - name: Tags
     url: /tags
   - name: Theme
-    url: https://github.com/OhmVikrant/vikrantdey.github.io
+    url: https://github.com/vikrantdey.github.io
 
 # Pagination
 paginate: 5
