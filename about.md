@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+A second year undergrad at Indian Institute of Technology Roorkee, India, pursuing Bachelor of Technology in Electrical Engineering. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+My primary focus is on Data Science, Deep Learning, Speech Recognition, Audio Signal Analysis, Natural Language Processing, Image Processing, Electronics and IoT
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ohmvikrant2000@gmail.com](mailto:ohmvikrant2000@gmail.com)
+[vdey@mt.iitr.ac.in](mailto:vdey@mt.iitr.ac.in)
