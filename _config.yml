@@ -26,8 +26,7 @@ navigation:
   - name: About
     url: /about
   
-  - name: Tags
-    url: /tags
+  
   
     url: https:/github/OhmVikrant.github.io
 
