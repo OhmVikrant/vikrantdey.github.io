@@ -13,6 +13,9 @@ $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
 $white: #fff;
+$codewhite: #ffffff;
+$graypunch: #e0e0e0;
+$tagcolor: #bbc2c9;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
@@ -23,9 +26,18 @@ $georgia: Georgia, serif;
 $base-font: 'Spoqa Han Sans', 'Source Sans Pro', 'Apple SD Gothic Neo', 'Nanum Barun Gothic', 'Nanum Gothic', 'Verdana', 'Arial', 'Dotum', sans-serif;
 $code-font: 'Menlo', 'Courier New', 'Monaco', 'Spoqa Han Sans', monospace;
 
+// google web fonts
+$Serif: 'Roboto Slab', serif;
+$SansSerif: 'Roboto', sans-serif;
+$Monospace: 'Roboto Mono', monospace;
+$opensans: 'Open Sans', sans-serif;
+
+
 // Font sizes
 $base-font-size: 18px;
 $small-font-size: 14px;
+$code-font-size: 16px;
+
 
 // Colors
 $base-color: $oc-gray-8;
@@ -50,8 +62,8 @@ $selection-background-color: $oc-gray-1;
 $pagination-color: $oc-gray-6;
 $pagination-over-color: $oc-gray-7;
 
-$tag-index-label-color: $base-color;
-$tag-index-label-background-color: $oc-gray-2;
+$tag-index-label-color: $oc-black;
+$tag-index-label-background-color: $tagcolor;
 $tag-index-count-background-color: $oc-gray-3;
 
 $footer-border-color: $oc-gray-2;
