@@ -19,18 +19,27 @@ html {
 }
 
 body {
-//   background-image: url("https://i.imgur.com/I82m4Hi.png");
-//   background-color: #cccccc;
-//   background-position: center; 
-//   background-repeat: no-repeat;
-//   background-size: cover;
   font-family: $base-font;
   color: $base-color;
+  background-color: $graypunch;
   line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+code {
+  color: $code-color;
+  font-size: $code-font-size;
+}
+
+
+
+.highlighter-rouge {
+  color: $highligher !important;
+  font-size: 80% !important;
+  
 }
 
 .container {
-  
   margin: 0 auto;
   max-width: 740px;
   padding: 0 10px;
@@ -52,6 +61,7 @@ h1, h2, h3, h5 {
 }
 
 h1 {
+  font-family: $Serif;
   font-size: 30px;
   a {
     color: inherit;
@@ -77,11 +87,12 @@ h6 {
 
 p {
   color: $text-color;
+  font-family: $opensans;
   margin: 15px 0;
 }
 
 a {
-  color: $link-color;
+  color: $refcolor;
   text-decoration: none;
   cursor: pointer;
   &:hover, &:active {
@@ -552,7 +563,6 @@ nav {
 
 // Footer
 .wrapper-footer {
-//    opacity: 0.5;
   margin-top: 50px;
   border-top: 1px solid $footer-border-color;
   border-bottom: 1px solid $footer-border-color;
