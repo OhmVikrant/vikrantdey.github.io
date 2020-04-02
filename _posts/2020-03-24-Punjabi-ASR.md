@@ -106,8 +106,11 @@ The least WER% comes out to be 0.13%.
 Now we do Delta-Delta training to determine acceleration coeffficients. The steps are similar to the previous training:
 
 > steps/align_si.sh --nj 4 data/train data/lang_bigram exp/tri1 exp/tri1_alpha
+
 > steps/train_deltas.sh 2500 30000 data/train data/lang_bigram exp/tri1_alpha exp/tri2
+
 > utils/mkgraph.sh data/lang_bigram exp/tri2 exp/tri2/graph
+
 > steps/decode.sh --nj 4 exp/tri2/graph data/test exp/tri2/decode
 
 ![](../pics/4.png)
@@ -120,8 +123,11 @@ First, we perform Linear Discriminant Analysis (LDA) for de-correlation and dime
 Maximum Likelihood Linear Transform (MLLT) for further precision:
 
 > steps/align_si.sh --nj 4 data/train data/lang_bigram exp/tri2 exp/tri2_alpha
+
 > steps/train_lda_mllt.sh 2000 16000 data/train data/lang_bigram exp/tri2_alpha exp/tri3
+
 > utils/mkgraph.sh data/lang_bigram exp/tri3 exp/tri3/graph
+
 > steps/decode.sh --nj 4 exp/tri3/graph data/test exp/tri3/decode
 
 ![](../pics/5.png)
@@ -132,11 +138,13 @@ After speaker dependent adaption, we perform speaker independent adaption using 
 speaker variability:
 
 > steps/align_si.sh --nj 4 data/train data/lang_bigram exp/tri3 exp/tri3_alpha
+
 > steps/train_sat.sh 2000 16000 data/train data/lang_bigram exp/tri3_alpha exp/tri4
 
 ![](../pics/6.png)
 
 > utils/mkgraph.sh data/lang_bigram exp/tri4 exp/tri4/graph
+
 > steps/decode_fmllr.sh --nj 4 exp/tri4/graph data/test exp/tri4/decode
 
 ![](../pics/7.png)
@@ -153,6 +161,7 @@ The WER is still the same : 0.13%
 First we align the triphone model and the universal background model from the parent directory:
 
 > steps/align_fmllr.sh --nj 4 data/train data/lang_bigram exp/tri4 exp/tri4_alpha
+
 > steps/train_ubm.sh 700 data/train data/lang_bigram exp/tri4_alpha exp/ubm
 
 ![](../pics/9.png)
@@ -169,6 +178,7 @@ The command seems to be complex but is actually very simple and self-explanatory
 Then like the earlier models, we go through:
 
 > utils/mkgraph.sh data/lang_bigram exp/sgmm exp/sgmm/graph
+
 > steps/decode_sgmm2.sh --nj 4 exp/tri4_alpha/decode exp/sgmm/graph data/test exp/sgmm/decode
 
 ![](../pics/11.png)
