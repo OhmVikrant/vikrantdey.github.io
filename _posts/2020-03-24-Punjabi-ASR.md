@@ -10,6 +10,7 @@ tags:
   - SGMM
   - HMM
   - Markov
+  - Subspace Gaussian
 ---
 
 Last month, I had built an Automatic Speech Recognition (ASR) system for Hindi using the Kaldi Toolkit. This time, I have created an ASR system for Punjabi on similar lines. Instead of using Deep Neural Network (DNN) modeling like last time, I have tried to enforce a Subspace Gaussian Mixture Model. The entire code along with the speech data can be found on my GitHub page: https://github.com/OhmVikrant/ASR-for-Punjabi 
