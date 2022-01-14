@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-A pre-final year undergrad at Indian Institute of Technology Roorkee, India, pursuing Bachelor of Technology in Electrical Engineering. 
+A final year undergrad at Indian Institute of Technology Roorkee, India, pursuing Bachelor of Technology in Electrical Engineering. 
 
 ### More Information
 
-My primary focus is on Data Science, Natural Language Processing, Speech Recognition, Image Processing and Time Series Forecasting.
+Incoming Data Scientist @AI Garage, MasterCard. My primary focus is on Data Science, Natural Language Processing, Speech Recognition, Image Processing and Time Series Forecasting.
 
 ### Contact me
 
